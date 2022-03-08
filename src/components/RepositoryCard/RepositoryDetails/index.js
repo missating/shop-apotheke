@@ -1,4 +1,6 @@
 import { Button, Divider } from 'antd';
+import Proptypes from 'prop-types';
+
 import './RepositoryDetails.css';
 
 const RepositoryDetails = ({ repository, handleStarredRepository, renderButtonText }) => {
@@ -30,6 +32,12 @@ const RepositoryDetails = ({ repository, handleStarredRepository, renderButtonTe
       <Divider />
     </>
   );
+};
+
+RepositoryDetails.propTypes = {
+  repository: Proptypes.object.isRequired,
+  handleStarredRepository: Proptypes.func.isRequired,
+  renderButtonText:  Proptypes.func.isRequired,
 };
 
 export default RepositoryDetails;

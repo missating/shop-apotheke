@@ -1,4 +1,6 @@
 import { Select } from 'antd';
+import Proptypes from 'prop-types';
+
 import './LanguageSelect.css';
 
 const { Option } = Select;
@@ -16,6 +18,10 @@ const LanguageSelect = ({ handleChange }) => {
       </Select>
     </div>
   );
+};
+
+LanguageSelect.propTypes = {
+  handleChange: Proptypes.func.isRequired,
 };
 
 export default LanguageSelect;
