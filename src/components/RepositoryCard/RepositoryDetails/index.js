@@ -26,7 +26,7 @@ const RepositoryDetails = ({ repository, handleStarredRepository, renderButtonTe
           </Button>
           <p className="repository-star">
             {repository.stargazers_count}
-            </p>
+          </p>
         </div>
       </div>
       <Divider />

@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import './RepositoryList.css'
+import './RepositoryList.css';
 
 import useFetchRepositories from 'hooks/useFetchRepositories';
 import { LOCAL_STORAGE_ITEM } from 'utils/constant';
