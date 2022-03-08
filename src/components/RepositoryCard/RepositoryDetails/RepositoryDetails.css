@@ -1,0 +1,37 @@
+.repository-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px auto;
+  width: 100%;
+}
+
+.repository-details {
+  width: 50%;
+  padding: 20px;
+}
+
+.repository-button {
+  width: 40%;
+  padding: 20px;
+}
+
+.repository-name {
+  font-weight: 600;
+}
+
+.repository-description {
+  overflow-wrap: break-word;
+}
+
+.repository-star {
+  border-radius: 10%;
+  display: inline-block;
+  background-color: #D3D3D3;
+  margin-left: 5px;
+  padding: 5px;
+}
+
+.repository-link {
+  text-decoration: underline;
+}

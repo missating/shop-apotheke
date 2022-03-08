@@ -1,0 +1,9 @@
+.language-box {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+p {
+  margin: 0;
+}
