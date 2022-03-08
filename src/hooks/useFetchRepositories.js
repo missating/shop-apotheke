@@ -1,7 +1,7 @@
 import { useState, useEffect, useCallback } from 'react';
 import axios from 'axios';
 
-import { getUrl } from 'utils/getUrl'
+import { getUrl } from 'utils/getUrl';
 
 const useFetchRepositories = (language) => {
   const [repositoriesState, setRepositories] = useState({
@@ -11,7 +11,7 @@ const useFetchRepositories = (language) => {
 
   const fetchRepos = useCallback(async() => {
     try {
-      const repoData = await axios.get(getUrl(language))
+      const repoData = await axios.get(getUrl(language));
       setRepositories((prevState) => ({
         ...prevState,
         repositories: repoData.data.items,
@@ -26,11 +26,11 @@ const useFetchRepositories = (language) => {
   }, [language])
 
   useEffect(() => {
-    fetchRepos()
+    fetchRepos();
   }, [fetchRepos]);
 
   return {
-    ...repositoriesState
+    ...repositoriesState,
   };
 };
 
