@@ -22,6 +22,6 @@
 
 Unit testing is achieved through the use of `jest` framework with `React Testing Library`.
 
-while within the **client folder**.
+while within the root of the **project directory**.
 
 1. **Unit tests** - Run `npm test` on the terminal
